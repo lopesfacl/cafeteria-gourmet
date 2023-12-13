@@ -57,10 +57,10 @@ if(isset($_POST["env_cod"])){
                 $mail->SMTPAuth = true;
     
                 //SMTP username
-                $mail->Username = 'cafeteriagourmet81@gmail.com';
+                $mail->Username = 'email da cafeteria';
     
                 //SMTP password
-                $mail->Password = 'teyuchxkltdrytqd';
+                $mail->Password = 'senha do email da cafeteria';
     
                 //Enable TLS encryption;
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -69,7 +69,7 @@ if(isset($_POST["env_cod"])){
                 $mail->Port = 587;
     
                 //Recipients
-                $mail->setFrom('cafeteriagourmet81@gmail.com', 'Cafeteria Gourmet');
+                $mail->setFrom('email da cafeteria', 'Cafeteria Gourmet');
     
                 //Add a recipient
                 $mail->addAddress($email, '');
